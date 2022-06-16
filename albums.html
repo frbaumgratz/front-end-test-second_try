@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <title>Albums</title>
+  </head>
+  <body>
+    <!-- Searchbar -->
+    <header class="bg-[#e8432f] flex justify-center items-center p-4">
+      <!-- search title -->
+      <p class="text-white font-bold text-2xl">
+        isobar<span class="text-xs font-light">.fm</span>
+      </p>
+      <input
+        id="filter"
+        type="text"
+        class="rounded-sm ml-3 px-2 text-center placeholder:text-right outline-none"
+        placeholder="&#xF002;"
+        style="font-family: Arial, FontAwesome"
+      />
+    </header>
+    <!-- <ul id="result" class="user-list max-h-4"></ul> -->
+
+    <!-- <div class="flex justify-center">
+      <img
+        class="h-[300px] w-[360px] object-cover"
+        src="/assets/imgs/rush_capa_1.jpeg"
+        alt="rush"
+      />
+    </div> -->
+    <!-- 
+    <div class="flex flex-col items-center justify-center space-y-1 -mt-12">
+      <h1 class="font-bold text-white text-xl">Rush</h1>
+      <div class="flex space-x-5 px-2 justify-center">
+        <p class="translate-y-1/3 font-semibold text-gray-500 text-sm">ROCK</p>
+        <img
+          class="h-[90px] w-[90px] object-cover rounded-full"
+          src="/assets/imgs/rush_capa_1.jpeg"
+          alt="rush"
+        />
+        <p class="translate-y-1/3 font-semibold text-gray-500 text-sm">
+          9 543 832 PLAYS
+        </p>
+      </div>
+    </div> -->
+
+    <!-- <div class="flex flex-col items-center justify-center space-y-1 -mt-12">
+      <h1 class="font-bold text-white text-xl">Rush</h1>
+      <p
+        class="translate-y-1/3 font-semibold text-gray-500 text-sm text-center space-y-4 inline"
+      >
+        ROCK
+        <img
+          class="h-[90px] w-[90px] object-cover rounded-full"
+          src="/assets/imgs/rush_capa_1.jpeg"
+          alt="rush"
+        />
+        9 543 832 PLAYS
+      </p>
+    </div> -->
+
+    <!-- Card -->
+    <div class="card">
+      <!-- card header -->
+      <div class="card__header">
+        <img
+          class="h-[300px] w-[375px] object-cover"
+          src="/assets/imgs/rush_capa_1.jpeg"
+          alt="rush"
+        />
+      </div>
+      <div class="card__inbetween">
+        <!-- aqui é a parte difícil -->
+      </div>
+      <div class="card__body" id="card-body">
+        <p
+          class="p-6 text-justify overflow-hidden h-28 text-gradient"
+          id="band-description"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+          suscipit non excepturi totam veritatis accusamus voluptas beatae
+          repudiandae a, mollitia sint repellendus rem eum dicta soluta labore
+          commodi assumenda iure ratione omnis molestias quaerat? Itaque nam
+          molestias dignissimos sit natus culpa, dolore quod, officia doloremque
+          fugit laborum! Placeat, debitis libero. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Ipsum suscipit non excepturi totam
+          veritatis accusamus voluptas beatae repudiandae a, mollitia sint
+          repellendus rem eum dicta soluta labore commodi assumenda iure ratione
+          omnis molestias quaerat? Itaque nam molestias dignissimos sit natus
+          culpa, dolore quod, officia doloremque fugit laborum! Placeat, debitis
+          libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Ipsum suscipit non excepturi totam veritatis accusamus voluptas beatae
+          repudiandae a, mollitia sint repellendus rem eum dicta soluta labore
+          commodi assumenda iure ratione omnis molestias quaerat? Itaque nam
+          molestias dignissimos sit natus culpa, dolore quod, officia doloremque
+          fugit laborum! Placeat, debitis libero. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Ipsum suscipit non excepturi totam
+          veritatis accusamus voluptas beatae repudiandae a, mollitia sint
+          repellendus rem eum dicta soluta labore commodi assumenda iure ratione
+          omnis molestias quaerat? Itaque nam molestias dignissimos sit natus
+          culpa, dolore quod, officia doloremque fugit laborum! Placeat, debitis
+          libero. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Ipsum suscipit non excepturi totam veritatis accusamus voluptas beatae
+          repudiandae a, mollitia sint repellendus rem eum dicta soluta labore
+          commodi assumenda iure ratione omnis molestias quaerat? Itaque nam
+          molestias dignissimos sit natus culpa, dolore quod, officia doloremque
+          fugit laborum! Placeat, debitis libero.
+        </p>
+        <button
+          class="font-bold text-4xl text-center p-6 ml-auto mr-auto block"
+          id="read-more"
+        >
+          +
+        </button>
+      </div>
+    </div>
+
+    <!-- Albuns -->
+    <div class="grid grid-cols-3">
+      <div class="w-32 h-32 bg-blue-800"></div>
+      <div class="w-32 h-32 bg-red-800"></div>
+      <div class="w-32 h-32 bg-yellow-800"></div>
+      <div class="w-32 h-32 bg-blue-800"></div>
+      <div class="w-32 h-32 bg-red-800"></div>
+      <div class="w-32 h-32 bg-yellow-800"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

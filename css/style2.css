@@ -1,0 +1,13 @@
+/* <!-- text gradient --> */
+
+.text-gradient {
+  background: -webkit-linear-gradient(#333, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hide class */
+
+.hide {
+  display: none;
+}

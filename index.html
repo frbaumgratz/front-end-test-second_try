@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <title>Index</title>
+  </head>
+  <body>
+    <!-- Searchbar -->
+    <header class="bg-[#e8432f] flex justify-center items-center p-4">
+      <!-- search title -->
+      <p class="text-white font-bold text-2xl">
+        isobar<span class="text-xs font-light">.fm</span>
+      </p>
+      <input
+        id="filter"
+        type="text"
+        class="rounded-sm ml-3 px-2 text-center placeholder:text-right outline-none"
+        placeholder="&#xF002;"
+        style="font-family: Arial, FontAwesome"
+      />
+    </header>
+    <ul id="result" class="user-list max-h-4"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
