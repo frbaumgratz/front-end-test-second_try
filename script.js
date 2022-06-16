@@ -16,6 +16,27 @@ async function getData() {
 
   console.log(data);
 
+  // aeeee caralho! funcionou! finalmente! aeeee! isso aqui é o filtro por numero de plays! shooow! vou até comitar!
+  function compare(a, b) {
+    if (b.numPlays < a.numPlays) {
+      return -1;
+    }
+    if (b.numPlays > a.numPlays) {
+      return 1;
+    }
+    return 0;
+  }
+
+  data.sort(compare);
+  // /aeeee caralho! funcionou! finalmente! aeeee! isso aqui é o filtro por numero de plays! shooow! vou até comitar!
+
+  // não funcionou
+  // data.numPlays.sort(function (a, b) {
+  //   return b - a;
+  // });
+
+  // console.log(data);
+
   // Clear results
   result.innerHTML = "";
 
@@ -36,6 +57,15 @@ async function getData() {
     `;
     result.appendChild(li);
   });
+
+  // Tentativa de filtrar por número de plays
+  // console.log(listItems);
+
+  // function sortPlays(a, b) {
+  //   return a - b;
+  // }
+  // listItems.sort(sortPlays(`${data.band.numPlays} - ${data.band.numPlays}`));
+  // console.log(listItems);
 }
 
 // tive que criar a classe hide manualmente porque utilizando a Hidden do tailwind não funciona.
@@ -50,6 +80,11 @@ function filterData(searchTerm) {
     }
   });
 }
+
+// Filtrando a busca por numberOfPlays
+listItems.sort(function (a, b) {
+  return `${band.numPlays} - ${band.numPlays}`;
+});
 
 // /Pegando cada banda do api e distrbuindo numa lista para realizar a busca. tela 1.
 
