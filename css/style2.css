@@ -11,3 +11,8 @@
 .hide {
   display: none;
 }
+
+.px48 {
+  height: 48px;
+  width: 48px;
+}
